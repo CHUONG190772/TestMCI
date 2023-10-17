@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script id="allauth-facebook-settings" type="application/json">
+{"appId": "406295001429802", "version": "v13.0", "sdkUrl": "//connect.facebook.net/en_US/sdk.js", "initParams": {"appId": "406295001429802", "version": "v13.0", "cookie": true}, "loginOptions": {"auth_type": "reauthenticate", "scope": "email,public_profile", "auth_nonce": "XRYoqT44re6Y5l99wceG8YKKRyXfvJNK"}, "loginByTokenUrl": "https://mcivietnam.com/facebook_login_by_token/", "cancelUrl": "https://mcivietnam.com/accounts/social/login/cancelled/", "logoutUrl": "https://mcivietnam.com/accounts/logout/", "loginUrl": "https://mcivietnam.com/accounts/facebook/login/", "errorUrl": "https://mcivietnam.com/accounts/social/login/error/", "csrfToken": "UldYsMoqFnBBuwkdcOciHes3HJxFSDnjvCjNE2f2tvYugcdKIMam0un8eCzySCG9"}
+</script>
+    <script type="text/javascript" src="/static/facebook/js/fbconnect.js"></script>
+    <!-- dang nhap bang fb -->
+    <input type="hidden" name="csrfmiddlewaretoken"
+        value="Td9zJqz81S9mqF2gVfH0uGT5jHXtXerbuufoVGqKP0wfclVNrdF4NWOaQAZmXdK1">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JPLGZ7" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+
+    <div class="nav">
+        <div class="topnav">
+            <!-- Left side -->
+            <div class="topnav-left">
+                <div class="logo d-none d-md-block">
+                    <a href="/">
+                        <img id="img-logo" loading="lazy" width="120" height="auto"
+                            src="https://mcivietnam.com/media/home/Logo2-03.png" alt=""></a>
+                </div>
+
+                <!-- Desktop -->
+                <div class="dropdown nav-desktop ps-3 d-none d-lg-block">
+                    <span class="topnav__dropdown text-uppercase font-weight-bold" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Khóa học <i class="fas fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="nav-row">
+                            <div class="nav-col">
+                                <a class="dropdown-item" href="/course-market/">
+                                    <strong>Phân tích dữ liệu</strong>
+                                </a>
+
+                                <a class="dropdown-item"
+                                    href="/course-detail/khoa-hoc-python-foundation-in-data-analytics/">Python
+                                    Foundation in Data Analytics</a>
+
+                                <a class="dropdown-item"
+                                    href="/course-detail/khoa-hoc-sql-for-newbies-data-analysis-for-beginners/">SQL for
+                                    Newbies: Data Analysis for Beginners</a>
+
+                                <a class="dropdown-item"
+                                    href="/course-detail/khoa-hoc-database-and-sql-for-data-science/">Database and SQL
+                                    for Data Science</a>
+
+                                <a class="dropdown-item"
+                                    href="/course-detail/khoa-hoc-analyzing-and-visualizing-data-on-power-bi/">Analyzing
+                                    and Visualizing Data on Power BI</a>
+
+                                <a class="dropdown-item"
+                                    href="/course-detail/khoa-hoc-applying-power-bi-in-business-intelligence/">Applying
+                                    Power BI In Business Intelligence</a>
+
+                                <a class="dropdown-item" href="/course-detail/khoa-hoc-vba-basic-to-advanced/">VBA Basic
+                                    To Advanced</a>
+
+                            </div>
+
+                            <div class="nav-col">
+                                <a class="dropdown-item" href="/course-market/">
+                                    <strong>Khoa học dữ liệu</strong>
+                                </a>
+
+                                <a class="dropdown-item"
+                                    href="/course-detail/khoa-hoc-python-for-machine-learning-deep-learning/">Python for
+                                    Machine Learning &amp; Deep Learning</a>
+
+                                <a class="dropdown-item" href="/course-detail/khoa-hoc-career-coaching/">Career
+                                    Coaching</a>
+
+                                <a class="dropdown-item" href="/course-detail/khoa-hoc-data-science-track/">Data Science
+                                    Track</a>
+
+                                <a class="dropdown-item"
+                                    href="/course-detail/khoa-hoc-combo-python-level-1-level-2/">Combo Python Level 1
+                                    &amp; Level 2</a>
+
+                                <a class="dropdown-item"
+                                    href="/course-detail/khoa-hoc-math-statistics-for-data-science/">Math &amp;
+                                    Statistics for Data Science</a>
+
+                                <a class="dropdown-item"
+                                    href="/course-detail/khoa-hoc-deep-learning-application-in-the-real-world/">Deep
+                                    Learning Application in the Real World</a>
+
+                            </div>
+
+                        </div>
+                        <div class="nav-row">
+
+                            <div class="nav-col">
+                                <a class="dropdown-item" href="/course-market/">
+                                    <strong>Kĩ sư dữ liệu</strong>
+                                </a>
+
+                                <a class="dropdown-item" href="">Combo
+                                    Data Engineering Foundations Specialization</a>
+
+                                <a class="dropdown-item" href="">Big Data with Hadoop
+                                    and Spark</a>
+
+                                <a class="dropdown-item" href="">Advanced
+                                    Data Lakes and Data Warehouses</a>
+
+                                <a class="dropdown-item" href="">AWS Data Engineer
+                                    for Beginners</a>
+
+                                <a class="dropdown-item" href="">Advanced AWS Cloud
+                                    Data Engineer</a>
+
+                                <a class="dropdown-item" href="">Combo Data
+                                    Engineering Professional</a>
+
+                                <a class="dropdown-item" href="/course-market/"><b>Xem tất cả</b>
+                                </a>
+                            </div>
+
+                            <div class="nav-col">
+                                <a class="dropdown-item" href="/course-market/">
+                                    <strong>Lập trình ứng dụng</strong>
+                                </a>
+
+                                <a class="dropdown-item" href="">Python Backend
+                                    Foundation</a>
+
+                                <a class="dropdown-item" href="">Python Backend
+                                    Development</a>
+
+                                <a class="dropdown-item" href="">Database Management in
+                                    MySQL</a>
+
+                                <a class="dropdown-item" href="">IT Business
+                                    Analyst for Beginners</a>
+
+                                <a class="dropdown-item" href="">IT Business Analyst
+                                    Fast Track</a>
+
+                                <a class="dropdown-item" href="">Advanced IT Business
+                                    Analyst</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown nav-desktop ps-3 d-none d-lg-block">
+                    <span class="topnav__dropdown text-uppercase font-weight-bold" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lịch đào tạo <i class="fas fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                    <ul class="dropdown-menu is-one-col" aria-labelledby="dropdownMenuButton">
+                        <hr style="margin: 0px; border-top: 1px solid #bdbdbd">
+                        <li><a class="dropdown-item" href="">
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                Lịch đào tạo
+                            </a>
+                        </li>
+
+                        <li><a class="dropdown-item" href="">
+                                <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                                Giảng viên
+                            </a></li>
+
+                        <li><a class="dropdown-item" href="">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                Học viên
+                            </a></li>
+                    </ul>
+
+
+                </div>
+
+                <div class="dropdown nav-desktop ps-3 d-none d-lg-block">
+                    <span class="topnav__dropdown text-uppercase font-weight-bold" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Doanh nghiệp <i class="fas fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                    <ul class="dropdown-menu is-one-col" aria-labelledby="dropdownMenuButton">
+                        <hr style="margin: 0px; border-top: 1px solid #bdbdbd">
+                        <li><a class="dropdown-item" href="">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                Mạng lưới đối tác
+                            </a></li>
+
+                        <li><a class="dropdown-item" href="">
+                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                Đào tạo doanh nghiệp
+                            </a></li>
+
+                        <li>
+                            <a class="dropdown-item" href="">
+                                <i class="fa fa-telegram" aria-hidden="true"></i>
+                                Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <div class="dropdown nav-desktop ps-3 d-none d-lg-block">
+                    <a class="topnav__dropdown text-uppercase font-weight-bold" type="button" href="/blog/">Blog
+                    </a>
+                </div>
+
+                <div class="dropdown nav-desktop ps-3 d-none d-lg-block">
+                    <span class="topnav__dropdown text-uppercase font-weight-bold" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Về chúng tôi <i class="fas fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                    <ul class="dropdown-menu is-one-col" aria-labelledby="dropdownMenuButton">
+
+                        <li>
+                            <a class="dropdown-item" href="">
+                                <i class="fa fa-caret-square-o-up" aria-hidden="true"></i>
+                                Học viện Công nghệ MCI
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="">
+                                <i class="fa fa-street-view" aria-hidden="true"></i>
+                                Cơ hội nghề nghiệp
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="">
+                                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                Sự kiện
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="">
+                                <i class="fa fa-telegram" aria-hidden="true"></i>
+                                Liên hệ
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Mobile -->
+                <div class="d-lg-none">
+                    <span class="topnav__dropdown ps-2" type="button" data-bs-toggle="modal"
+                        data-bs-target="#serviceModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                            </path>
+                        </svg>
+                    </span>
+
+                    <!-- Hiển thị Services -->
+                    <div class="modal fade" id="serviceModal" tabindex="-1" role="dialog"
+                        aria-labelledby="serviceModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen h-auto m-0" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header border-0">
+                                    <h5 class="modal-title text-white" id="serviceModalLabel">Services</h5>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="accordion" id="accordionService">
+                                        <!-- Khoa hoc -->
+                                        <div class="card border-0 mt-0">
+                                            <div class="card-header mb-3" id="headingCourseModal"
+                                                style="background-color: white; padding: unset;">
+                                                <h6 style="font-weight: bold; color: var(--main-color);"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseCourseModal"
+                                                    aria-expanded="true" aria-controls="collapseCourseModal">
+                                                    KHÓA HỌC
+                                                    <i class="fa-solid fa-caret-down" style="float: right;"></i>
+                                                </h6>
+                                            </div>
+                                            <div id="collapseCourseModal" class="collapse"
+                                                aria-labelledby="headingCourseModal"
+                                                data-parent="#accordionCourseModal">
+
+                                                <div class="accordion" id="accordionCourse">
+                                                    <div class="card border-0">
+                                                        <div class="card-header" id="headingTwoCourse"
+                                                            style="background-color: white; padding: unset;">
+                                                            <li class="fw-bolder" data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseTwoCourse" aria-expanded="true"
+                                                                aria-controls="collapseTwoCourse">
+                                                                <i class="fa-solid fa-caret-down"
+                                                                    style="float: right; color: #1746A2"></i>
+                                                                Phân tích dữ liệu
+                                                            </li>
+                                                        </div>
+                                                        <div id="collapseTwoCourse" class="collapse"
+                                                            aria-labelledby="headingTwoCourse"
+                                                            data-parent="#accordionCourse">
+                                                            <div class="card-body" style="padding: unset;">
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Python
+                                                                        Foundation in Data Analytics</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">SQL
+                                                                        for Newbies: Data Analysis for Beginners</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Database
+                                                                        and SQL for Data Science</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Analyzing
+                                                                        and Visualizing Data on Power BI</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Applying
+                                                                        Power BI In Business Intelligence</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">VBA
+                                                                        Basic To Advanced</a>
+                                                                </li>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card" style="border: none;">
+                                                        <div class="card-header" id="headingThreeCourse"
+                                                            style="background-color: white; padding: unset;">
+                                                            <li class="fw-bolder" data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseThreeCourse"
+                                                                aria-expanded="true"
+                                                                aria-controls="collapseThreeCourse">
+                                                                Khoa học dữ liệu
+                                                                <i class="fa-solid fa-caret-down"
+                                                                    style="float: right;"></i>
+                                                            </li>
+                                                        </div>
+                                                        <div id="collapseThreeCourse" class="collapse"
+                                                            aria-labelledby="headingThreeCourse"
+                                                            data-parent="#accordionCourse">
+                                                            <div class="card-body" style="padding: unset;">
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Python
+                                                                        for Machine Learning &amp; Deep Learning</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Career
+                                                                        Coaching</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Data
+                                                                        Science Track</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Combo
+                                                                        Python Level 1 &amp; Level 2</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Math
+                                                                        &amp; Statistics for Data Science</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Deep
+                                                                        Learning Application in the Real World</a>
+                                                                </li>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card border-0">
+                                                        <div class="card-header" id="headingFourCourse"
+                                                            style="background-color: white; padding: unset;">
+                                                            <li class="fw-bolder" data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseFourCourse"
+                                                                aria-expanded="true" aria-controls="collapseFourCourse">
+                                                                Kĩ sư dữ liệu
+                                                                <i class="fa-solid fa-caret-down"
+                                                                    style="float: right;"></i>
+                                                            </li>
+                                                        </div>
+                                                        <div id="collapseFourCourse" class="collapse"
+                                                            aria-labelledby="headingFourCourse"
+                                                            data-parent="#accordionCourse">
+                                                            <div class="card-body" style="padding: unset;">
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Combo
+                                                                        Data Engineering Foundations Specialization</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Big
+                                                                        Data with Hadoop and Spark</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Advanced
+                                                                        Data Lakes and Data Warehouses</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">AWS
+                                                                        Data Engineer for Beginners</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Advanced
+                                                                        AWS Cloud Data Engineer</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Combo
+                                                                        Data Engineering Professional</a>
+                                                                </li>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card border-0">
+                                                        <div class="card-header" id="headingOneCourse"
+                                                            style="background-color: white; padding: unset;">
+                                                            <li class="fw-bolder" data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseOneCourse" aria-expanded="true"
+                                                                aria-controls="collapseOneCourse">
+                                                                Lập trình ứng dụng
+                                                                <i class="fa-solid fa-caret-down"
+                                                                    style="float: right;"></i>
+                                                            </li>
+                                                        </div>
+                                                        <div id="collapseOneCourse" class="collapse"
+                                                            aria-labelledby="headingOneCourse"
+                                                            data-parent="#accordionCourse">
+                                                            <div class="card-body" style="padding: unset;">
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Python
+                                                                        Backend Foundation</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Python
+                                                                        Backend Development</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Database
+                                                                        Management in MySQL</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">IT
+                                                                        Business Analyst for Beginners</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">IT
+                                                                        Business Analyst Fast Track</a>
+                                                                </li>
+
+                                                                <li class="mobile-list-nav ml-3 font-italic"><a
+                                                                        href="">Advanced
+                                                                        IT Business Analyst</a>
+                                                                </li>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card border-0">
+                                                        <div class="card-header mb-3" id="headingFiveCourse"
+                                                            style="background-color: white; padding: unset;">
+                                                            <li class="fw-bolder">
+                                                                <a href="/course-market/"><b>
+                                                                        Xem tất cả</b></a>
+                                                            </li>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Lich dao tao -->
+                                    <div class="card border-0 mt-0">
+                                        <div class="card-header mb-3" id="headingSchedule"
+                                            style="background-color: white; padding: unset;">
+                                            <h6 style="font-weight: bold; color: var(--main-color);"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSchedule"
+                                                aria-expanded="true" aria-controls="collapseSchedule">
+                                                LỊCH ĐÀO TẠO
+                                                <i class="fa-solid fa-caret-down" style="float: right;"></i>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseSchedule" class="collapse" aria-labelledby="headingSchedule"
+                                            data-parent="#accordionService">
+                                            <div class="card-body" style="padding: unset;">
+                                                <li><a href="">
+                                                        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                                        Lịch đào tạo
+                                                    </a></li>
+                                                <li><a href="">
+                                                        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                                                        Giảng viên
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3"><a href="">
+                                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                                        Học viên
+                                                    </a></li>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bussiness -->
+                                    <div class="card border-0">
+                                        <div class="card-header mb-3" id="headingBusiness"
+                                            style="background-color: white; padding: unset;">
+                                            <h6 style="font-weight: bold; color: var(--main-color);"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseBusiness"
+                                                aria-expanded="true" aria-controls="collapseBusiness">
+                                                DOANH NGHIỆP
+                                                <i class="fa-solid fa-caret-down" style="float: right;"></i>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseBusiness" class="collapse" aria-labelledby="headingBusiness"
+                                            data-parent="#accordionService">
+                                            <div class="card-body" style="padding: unset;">
+                                                <li><a href="">
+                                                        <i class="fa fa-users" aria-hidden="true"></i>
+                                                        Mạng lưới đối tác
+                                                    </a></li>
+
+                                                <li><a href="/">
+                                                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                                        Đào tạo Doanh nghiệp
+                                                    </a></li>
+
+                                                <li class="mb-3">
+                                                    <a href="">
+                                                        <i class="fa fa-telegram" aria-hidden="true"></i>
+                                                        Liên hệ
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Blog -->
+                                    <div class="card border-0">
+                                        <div class="card-header mb-3" style="background-color: white; padding: unset;">
+                                            <a href="">
+                                                <h6 style="font-weight: bold;">
+                                                    BLOG
+                                                </h6>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- About us -->
+                                    <div class="card" style="border: none;margin-top: 0px;">
+                                        <div class="card-header" id="headingOneService"
+                                            style="background-color: white; padding: unset;">
+                                            <h6 style="font-weight: bold; color: var(--main-color);"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOneService"
+                                                aria-expanded="true" aria-controls="collapseOneService">
+                                                VỀ CHÚNG TÔI
+                                                <i class="fa-solid fa-caret-down" style="float: right;"></i>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseOneService" class="collapse"
+                                            aria-labelledby="headingOneService" data-parent="#accordionService">
+                                            <div class="card-body" style="padding: unset;">
+                                                <li><a href="">
+                                                        <i class="fa fa-caret-square-o-up" aria-hidden="true"></i>
+                                                        Học viện Công nghệ MCI
+                                                    </a></li>
+
+                                                <li><a href="">
+                                                        <i class="fa fa-street-view" aria-hidden="true"></i>
+                                                        Cơ hội nghề nghiệp
+                                                    </a></li>
+
+                                                <li><a href="">
+                                                        <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                                        Sự kiện
+                                                    </a>
+                                                </li>
+                                                <li><a href="">
+                                                        <i class="fa fa-telegram" aria-hidden="true"></i>
+                                                        Liên hệ
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Right side -->
+            <div class="topnav-right">
+                <div class="topsearch-wrap mr-lg-3" style="position: relative;">
+                    <i onclick="showSearchBar()" class="fa-2x fa-solid fa-magnifying-glass d-none d-lg-block"></i>
+                    <i data-bs-toggle="modal" data-bs-target="#searchModal"
+                        class="fa-2x fa-solid fa-magnifying-glass d-block d-lg-none"></i>
+                    <form style="display: none;" class="topnav__form" method="GET" action="/search-infor">
+                        <div class="input-group">
+                            <input autocomplete="off" name="key" id="text_search" value="" type="text"
+                                class="topnav__search" placeholder="Tìm kiếm Blog, Sách, Khóa học, ...">
+                        </div>
+                    </form>
+
+                    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen h-auto m-0" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header" style="color: var(--main-color)">
+                                    <i class="fas fa-search">Tìm kiếm</i>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="topnav__form" method="GET" action="/search-infor">
+                                        <div class="input-group">
+                                            <input autocomplete="off" name="key" value="" type="text"
+                                                class="topnav__search" placeholder="Tìm kiếm Blog, Sách, Khóa học, ...">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!-- desktop -->
+                    <div class="d-flex flex-column align-items-center d-none d-lg-flex">
+                        <button style="width: 120px; background-color:white;" class="btn btn-primary">
+                            <a style="color: red" data-bs-toggle="modal" data-bs-target="#LoginRegisterModal">Đăng
+                                nhập</a>
+                        </button>
+                    </div>
+                    <!-- mobile and tablet-->
+                    <div class="d-flex flex-column align-items-center d-md-flex d-lg-none">
+                        <button style="margin-right: 10px;" class="btn">
+                            <a class="text-white" data-bs-toggle="modal" data-bs-target="#LoginRegisterModal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                    class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z">
+                                    </path>
+                                    <path fill-rule="evenodd"
+                                        d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login & Register Modal -->
+    <div class="modal fade" id="LoginRegisterModal" tabindex="-1" role="dialog"
+        aria-labelledby="LoginRegisterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex">
+                    <ul class="nav nav-tabs rounded" id="myTab" role="tablist" style="flex-direction: row;">
+                        <li class="nav-item waves-effect waves-light" id="nav-dang-nhap-1" role="presentation">
+                            <a class="nav-link rounded active" id="login-form-tab" data-bs-toggle="tab"
+                                href="#login-form" role="tab" aria-controls="home" aria-selected="true">Đăng nhập</a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn button-close-side btn-outline-dark ml-2" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container my-4">
+                        <!-- Section: Live preview -->
+                        <section>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade active show" id="login-form" role="tabpanel"
+                                    aria-labelledby="login-form-tab">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <div class="width_common tit_box">
+                                                <p>
+                                                    Đăng nhập bằng tài khoản MCI của bạn
+                                                </p>
+                                            </div>
+                                            <form id="loginForm">
+                                                <div class="item_input_log">
+                                                    <!-- <label for="username">Username:</label> -->
+                                                    <input type="text" class="input_form has_transition"
+                                                        id="usernameLogin" placeholder="Tên đăng nhập của bạn"
+                                                        required="">
+                                                </div>
+
+                                                <div class="item_input_log">
+                                                    <!-- <label for="newpwd2">Password:</label> -->
+                                                    <input type="password" class="input_form has_transition"
+                                                        id="newpwd2" required="" placeholder="Mật khẩu">
+                                                    <span onclick="myFunction2()" class="fa fa-fw fa-eye field-icon"
+                                                        style="float: right;" aria-hidden="true"></span>
+                                                </div>
+
+                                                <div class="width_common tit_box">
+                                                    <p id="loginFailed"></p>
+                                                </div>
+
+                                                <label class="remember-login"><input id="remember-me" checked="true"
+                                                        type="checkbox">
+                                                    Remember</label>
+
+                                                <div class="item_input_log">
+                                                    <button type="submit" class="btn btn-primary"
+                                                        style="height: 48px; width: 100%;">Đăng
+                                                        nhập</button>
+                                                </div>
+
+                                                <p>Forgot password? <a href="/accounts/password/reset/">
+                                                        <b style="color:#E87500">
+                                                            Click Here</b>
+                                                    </a></p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="registration-form" role="tabpanel"
+                                    aria-labelledby="registration-form-tab">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <div class="width_common tit_box">
+                                                <p>
+                                                    Tạo tài khoản MCI <br>
+                                                    Để sử dụng đầy đủ tính năng học lập trình, phân tích dữ liệu và
+                                                    tham gia cộng đồng hơn 500,000 thành viên
+                                                </p>
+                                            </div>
+                                            <form id="registerForm">
+                                                <div class="form-group">
+                                                    <label for="usernameRegister">Username:</label>
+                                                    <input type="text" class="form-control" id="usernameRegister"
+                                                        placeholder="Enter your username" required="">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="id_first_name">First name:</label>
+                                                    <input type="text" maxlength="30"
+                                                        class="textinput textInput form-control"
+                                                        placeholder="Enter your first name" id="firstNameRegister"
+                                                        required="">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="id_last_name">Last name:</label>
+                                                    <input type="text" maxlength="150"
+                                                        class="textinput textInput form-control"
+                                                        placeholder="Enter your last name" id="lastNameRegister"
+                                                        required="">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="newemail">Email:</label>
+                                                    <input type="email" class="form-control" id="newemailRegister"
+                                                        placeholder="Enter new email" required="">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="newpwd">Password:</label>
+                                                    <input type="password" class="form-control" id="newpwd" required=""
+                                                        placeholder="New password">
+                                                    <span onclick="myFunction()" class="fa fa-fw fa-eye field-icon"
+                                                        style="float: right;" aria-hidden="true"></span>
+                                                </div>
+
+                                                <div class="width_common tit_box">
+                                                    <p id="registerFailed"></p>
+                                                </div>
+
+                                                <button type="submit" class="btn btn-primary"
+                                                    style="width: 100%; height: 48px;">
+                                                    Đăng ký
+                                                </button>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="width_common tit_box">
+                                                <p>Tạo tài khoản với</p>
+                                            </div>
+                                            <div class="item_input_log">
+                                                <a href="/accounts/google/login/?method=oauth2"
+                                                    class="social_log face_log">
+                                                    <span><img
+                                                            src="https://s1.vnecdn.net/myvne/i/v69/ls/icons/facebook_ico.svg"
+                                                            alt="">Facebook</span>
+                                                </a>
+                                            </div>
+                                            <div class="item_input_log">
+                                                <a href="/accounts/google/login/?method=oauth2"
+                                                    class="social_log google_log">
+                                                    <span><img
+                                                            src="https://s1.vnecdn.net/myvne/i/v69/ls/icons/google_ico.svg"
+                                                            alt="">Google</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirm dialog - LogoutModal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="height: auto;">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title text-info" id="logoutModalLabel">Đăng xuất</h5>
+                    <button type="button" class="btn button-close-side btn-outline-dark" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body overflow-auto">
+                    Bạn có chắc chắn muốn đăng xuất không?
+                </div>
+                <div class="modal-footer border-top-0">
+                    <form method="post" action="/accounts/logout/">
+                        <input type="hidden" name="csrfmiddlewaretoken"
+                            value="Td9zJqz81S9mqF2gVfH0uGT5jHXtXerbuufoVGqKP0wfclVNrdF4NWOaQAZmXdK1">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Hủy</button>
+                        <button type="submit" class="btn btn-outline-primary">OK</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hotline -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+
+    <div class="modal" id="modal-loading"></div>
+
+
+    <script src="/static/home/js/wow.js"></script>
+
+
+    <!-- style riêng cho blog trang chính -->
+    <main>
+        <div class="Section d-none d-md-flex">
+            <img src="https://mcivietnam.com/media/home/blog/blog-banner.png" class="img-fluid">
+        </div>
+
+        <div class="Section d-flex d-md-none">
+            <img src="https://mcivietnam.com/media/home/blog/blog-banner.png" class="img-fluid">
+        </div>
+
+        <div class="container mt-6 mb-10">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-5 col-lg-5 mt-5 mt-md-0" id="event-section">
+                    <div class="d-inline-block">
+                        <h3 class="fw-bolder new-color">
+                            Sự kiện của MCI
+                        </h3>
+                        <hr class="w-100 new-color opacity-100" style="border-top: 3px solid;">
+                    </div>
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/thiet-ke-bao-cao-inh-cao-mo-rong-kha-nang-voi-arrayformula-query-pivot-table-va-looker-studio-2WJZS5/"
+                                        target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/tu-ong-hoa-bao-cao-voi-google-data-studiojpg7ftsdn.jpg"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/ang-ky-hoc-thu-khoa-hoc-power-bi-danh-cho-nguoi-moi-bat-au-4QUAV8/"
+                                        target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/mci_khoahocpp_22523-01pnge6cgct.png"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/decode-the-data-04-unlocking-data-insights-with-sql-trai-nghiem-thuc-hanh-mini-project-bang-ngon-ngu-truy-van-sql-KFEWKE/"
+                                        target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/1500x10003x-100jpg69vb3v.jpg"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-item">
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/mci-data-connect-your-career-development-in-data-Q0E1Z9/"
+                                        target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/skien-1248jpgt4ibdj.jpg"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/event-mini-decode-the-data-03-painting-your-data-with-visualization-7TVYBE/"
+                                        target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/3000x20002x-100jpg9653ss.jpg"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/Mini-event-Decode-the-Data-Coding-with-Python/"
+                                        target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/272d91b3-84d8-45d1-9148-a576f7724964jfiffth0si.jfif"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-item">
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/Australia-Abroad-Empowering-Your-Data-Analysis-and-IT-Career-in-the-Age-of-Automation/"
+                                        target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/3000x2000jpg9zngwu.jpg"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/Decode-the-Data-An-Introduction-to-the-Art-of-Data-Analytics/"
+                                        target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/329224675_225959006691261_6023274813764436387_njpg8vv5jd.jpg"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/MCI-SHARING-DATA-DRIVEN-DECISION-MAKING/" target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/su-kien-15-02-02pngxvr0om.png"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/Mci-career-path-will-data-analyst-be-replaced-in-the-future/"
+                                        target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/sukien-10-2-01pngx4rxyh.png"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/Positioning-yourself-in-Data-Analytics-Business-Analytics-IT-field/"
+                                        target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/su-kien-12-2-04pngnnp6ag.png"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/mci-career-path-data-analytics-visualization-with-Power-BI/"
+                                        target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/presentation1pnghv1xkv.png"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/mci-career-path-breaking-into-data-science/"
+                                        target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/presentation2png7lkc5b.png"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/livestream-introduction-to-sql/" target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/anh-website-livestream-pngy7q76x.png"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/mci-career-path-mat-trai-nganh-data-analytics/"
+                                        target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/su-kien-16-12-04pngha3ozh.png"
+                                            class="d-block event__image w-100 rounded" alt="...">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/mci-career-path-roadmap-to-become-a-business-analyst/"
+                                        target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/su-kien-9-12-02pngrasmdr.png"
+                                            class="d-block event__image rounded" alt="...">
+                                    </a>
+                                </div>
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/mci-sharing-sql-for-data-analytics/" target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/anh-newpngdzvyoc.png"
+                                            class="d-block event__image rounded" alt="...">
+                                    </a>
+                                </div>
+
+                                <div class="row justify-content-center my-3 mb-md-5">
+                                    <a href="/register-event/mci-sharing-introduction-to-power-bi/" target="_blank">
+                                        <img src="https://cdn.mcivietnam.com/nhanvien/media/Event/su-kien-2101-02pngpiyrsb.png"
+                                            class="d-block event__image rounded" alt="...">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Carousel indicators -->
+                            <ol class="carousel-indicators justify-content-center">
+                                <div>
+                                    <i class="fa-solid fa-angle-left" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide="prev" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                        class="rounded-circle active" aria-label="Slide 1" aria-current="true"></li>
+                                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                        class="rounded-circle" aria-label="Slide 2"></li>
+                                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                        class="rounded-circle" aria-label="Slide 3"></li>
+                                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                        class="rounded-circle" aria-label="Slide 4"></li>
+                                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                        class="rounded-circle" aria-label="Slide 5"></li>
+                                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                        class="rounded-circle" aria-label="Slide 6"></li>
+                                </div>
+
+                                <div class="ml-4">
+                                    <i class="fa-solid fa-angle-right" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide="next" aria-hidden="true"></i>
+                                </div>
+
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function startCarousel() {
+                        const carousel = new bootstrap.Carousel(document.querySelector('#carouselExampleIndicators'), {
+                            interval: 1000 //
+                        });
+                    }
+                    window.onload = startCarousel;
+                </script>
+
+                <div class="col-12 col-md-7 col-lg-7" id="blog-section">
+                    <div class="d-inline-block">
+                        <h3 class="fw-bolder new-color">
+                            Bài viết mới nhất
+                        </h3>
+                        <hr class="w-100 new-color opacity-100" style="border-top: 3px solid;">
+                    </div>
+
+                    <form class="row my-md-3 justify-content-center px-4" method="GET" action="/blog/#blog-section">
+                        <div>
+                            <div class="input-group d-flex align-items-center rounded-10">
+                                <input style="font-family: 'Font Awesome 5 Pro', 'Montserrat';" type="text"
+                                    class="form-control post__search" placeholder="   Tìm kiếm bài viết ..."
+                                    name="title-filter">
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center text-center">
+
+                            <div
+                                class="col-6 col-md-3 col-lg-3 border-right border-1 border-secondary my-2 my-lg-3 category-item">
+                                <span class="new-color fw-bolder">
+                                    <a href="/blog/?category-filter=NS#blog-section" class="new-color">Tin tức</a>
+                                </span>
+                            </div>
+
+                            <div
+                                class="col-6 col-md-3 col-lg-3 border-right border-1 border-secondary my-2 my-lg-3 category-item">
+                                <span class="new-color fw-bolder">
+                                    <a href="/blog/?category-filter=SE#blog-section" class="new-color">Chia sẻ kinh
+                                        nghiệm</a>
+                                </span>
+                            </div>
+
+                            <div
+                                class="col-6 col-md-3 col-lg-3 border-right border-1 border-secondary my-2 my-lg-3 category-item">
+                                <span class="new-color fw-bolder">
+                                    <a href="/blog/?category-filter=SK#blog-section" class="new-color">Kiến thức chuyên
+                                        môn</a>
+                                </span>
+                            </div>
+
+                            <div
+                                class="col-6 col-md-3 col-lg-3 border-right border-1 border-secondary my-2 my-lg-3 category-item">
+                                <span class="new-color fw-bolder">
+                                    <a href="/blog/?category-filter=KN#blog-section" class="new-color">Kinh nghiệm thực
+                                        chiến</a>
+                                </span>
+                            </div>
+
+                            <div
+                                class="col-6 col-md-3 col-lg-3 border-right border-1 border-secondary my-2 my-lg-3 category-item">
+                                <span class="new-color fw-bolder">
+                                    <a href="/blog/?category-filter=MC#blog-section" class="new-color">MCI Careers</a>
+                                </span>
+                            </div>
+
+                            <div
+                                class="col-6 col-md-3 col-lg-3 border-right border-1 border-secondary my-2 my-lg-3 category-item">
+                                <span class="new-color fw-bolder">
+                                    <a href="/blog/?category-filter=TK#blog-section" class="new-color">Thời khóa
+                                        biểu</a>
+                                </span>
+                            </div>
+
+                            <div
+                                class="col-6 col-md-3 col-lg-3 border-right border-1 border-secondary my-2 my-lg-3 category-item border-right-0">
+                                <span class="new-color fw-bolder">
+                                    <a href="/blog/?category-filter=RC#blog-section" class="new-color">Tìm hiểu khóa
+                                        học</a>
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                    </form>
+
+
+                    <div class="row justify-content-between my-3">
+                        <div class="col-12 col-md-5 col-lg-5 mb-3 mb-md-auto">
+                            <a href="/blog-detail/mci-vung-buoc-trong-thoi-ky-khung-hoang-9KFTP2/" target="_blank">
+                                <img src="https://cdn.mcivietnam.com/nhanvien/media/Blog/mci-teambuilingjpego3kelz.jpeg"
+                                    class="img-fluid post__image rounded">
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-md-7 col-lg-7 pl-1">
+                            <a href="/blog-detail/mci-vung-buoc-trong-thoi-ky-khung-hoang-9KFTP2/" target="_blank">
+                                <h5 class="new-color fw-bold">
+                                    MCI - Vững bước trong thời kỳ khủng hoảng
+                                </h5>
+                            </a>
+                            <p class="text-justify mb-3 mb-lg-0 post__content">
+                                Từ khoảng cuối năm 2022 cho đến hiện tại, làn sóng cắt giảm nhân sự (layoff) vẫn chưa hề
+                                nguôi ngoai tại khắp mọi lĩnh vực và ngành nghề.
+                            </p>
+                            <a href="/blog-detail/mci-vung-buoc-trong-thoi-ky-khung-hoang-9KFTP2/" target="_blank"
+                                class="new-color font-italic fw-bolder float-end mb-3 mb-lg-3">
+                                Xem thêm
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between my-3">
+                        <div class="col-12 col-md-5 col-lg-5 mb-3 mb-md-auto">
+                            <a href="/blog-detail/12-chung-chi-hang-au-trong-linh-vuc-data-analytics-NFBIWD/"
+                                target="_blank">
+                                <img src="https://cdn.mcivietnam.com/nhanvien/media/Blog/mci_chungchidata_7723png78bqfb.png"
+                                    class="img-fluid post__image rounded">
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-md-7 col-lg-7 pl-1">
+                            <a href="/blog-detail/12-chung-chi-hang-au-trong-linh-vuc-data-analytics-NFBIWD/"
+                                target="_blank">
+                                <h5 class="new-color fw-bold">
+                                    12 CHỨNG CHỈ HÀNG ĐẦU TRONG LĨNH VỰC DATA ANALYTICS!
+                                </h5>
+                            </a>
+                            <p class="text-justify mb-3 mb-lg-0 post__content">
+                                Bạn có đam mê với số liệu và muốn trở thành chuyên gia trong lĩnh vực Data Analytics?
+                                Cùng MCI tìm hiểu 12 chứng chỉ hàng đầu mà bạn nên trau dồi để nâng cao kỹ năng và phát
+                                triển sự nghiệp của mình trong ngành này nhé!
+                            </p>
+                            <a href="/blog-detail/12-chung-chi-hang-au-trong-linh-vuc-data-analytics-NFBIWD/"
+                                target="_blank" class="new-color font-italic fw-bolder float-end mb-3 mb-lg-3">
+                                Xem thêm
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between my-3">
+                        <div class="col-12 col-md-5 col-lg-5 mb-3 mb-md-auto">
+                            <a href="/blog-detail/tron-bo-tai-lieu-hoc-sql-cho-nguoi-moi-bat-au-share-tai-lieu-N3CL0S/"
+                                target="_blank">
+                                <img src="https://cdn.mcivietnam.com/nhanvien/media/Blog/sql-tron-bo-tai-lieupngvb68lw.png"
+                                    class="img-fluid post__image rounded">
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-md-7 col-lg-7 pl-1">
+                            <a href="/blog-detail/tron-bo-tai-lieu-hoc-sql-cho-nguoi-moi-bat-au-share-tai-lieu-N3CL0S/"
+                                target="_blank">
+                                <h5 class="new-color fw-bold">
+                                    Trọn bộ tài liệu học SQL cho người mới bắt đầu - share tài liệu
+                                </h5>
+                            </a>
+                            <p class="text-justify mb-3 mb-lg-0 post__content">
+                                Trọn bộ tài liệu học SQL cơ bản dành cho dân newbie hay trái ngành của MCI sẽ là điểm
+                                tựa vững chắc giúp bạn tự tin trên con đường phát triển sự nghiệp về dữ liệu.
+                            </p>
+                            <a href="/blog-detail/tron-bo-tai-lieu-hoc-sql-cho-nguoi-moi-bat-au-share-tai-lieu-N3CL0S/"
+                                target="_blank" class="new-color font-italic fw-bolder float-end mb-3 mb-lg-3">
+                                Xem thêm
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between my-3">
+                        <div class="col-12 col-md-5 col-lg-5 mb-3 mb-md-auto">
+                            <a href="/blog-detail/google-data-studio-la-gi-lo-trinh-hoc-google-data-studio-tai-mci-UR1433/"
+                                target="_blank">
+                                <img src="https://cdn.mcivietnam.com/nhanvien/media/Blog/google-data-studiojpegf3ig4z.jpeg"
+                                    class="img-fluid post__image rounded">
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-md-7 col-lg-7 pl-1">
+                            <a href="/blog-detail/google-data-studio-la-gi-lo-trinh-hoc-google-data-studio-tai-mci-UR1433/"
+                                target="_blank">
+                                <h5 class="new-color fw-bold">
+                                    Google Data Studio là gì? Lộ trình học Google Data Studio tại MCI
+                                </h5>
+                            </a>
+                            <p class="text-justify mb-3 mb-lg-0 post__content">
+                                Ngày nay nhiều marketer không biết cách đọc hiểu số liệu trong digital marketing trên
+                                những file excel, biểu đồ hay bảng phức tạp rất dễ gây nản. Google Data Studio - cánh
+                                tay phải của các digital marketer chuyên nghiệp,... Chúng ta cùng tìm hiểu lộ trình học
+                                Google Data Studio tại MCI nhé!
+                            </p>
+                            <a href="/blog-detail/google-data-studio-la-gi-lo-trinh-hoc-google-data-studio-tai-mci-UR1433/"
+                                target="_blank" class="new-color font-italic fw-bolder float-end mb-3 mb-lg-3">
+                                Xem thêm
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between my-3">
+                        <div class="col-12 col-md-5 col-lg-5 mb-3 mb-md-auto">
+                            <a href="/blog-detail/case-study-ung-dung-cua-python-trong-digital-marketing-09TISG/"
+                                target="_blank">
+                                <img src="https://cdn.mcivietnam.com/nhanvien/media/Blog/python-trong-marketingjpegbd2kfe.jpeg"
+                                    class="img-fluid post__image rounded">
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-md-7 col-lg-7 pl-1">
+                            <a href="/blog-detail/case-study-ung-dung-cua-python-trong-digital-marketing-09TISG/"
+                                target="_blank">
+                                <h5 class="new-color fw-bold">
+                                    Case study: Ứng dụng của Python trong Digital Marketing
+                                </h5>
+                            </a>
+                            <p class="text-justify mb-3 mb-lg-0 post__content">
+                                Python càng ngày được sử dụng rất phổ biến, đặc biệt là đối với Digital marketing vì có
+                                rất nhiều lý do giúp cho ngành này tăng trưởng. Một trong những lý do là hệ sinh thái
+                                mạnh, bao gồm hàng triệu người dùng, framework và hướng dẫn. Digital marketing đã tiếp
+                                cận, trở nên tinh vi và hướng dữ liệu được hỗ trợ bằng nhiều công cụ kinh doanh thông
+                                minh khác.
+                            </p>
+                            <a href="/blog-detail/case-study-ung-dung-cua-python-trong-digital-marketing-09TISG/"
+                                target="_blank" class="new-color font-italic fw-bolder float-end mb-3 mb-lg-3">
+                                Xem thêm
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-6">
+            <div class="justify-content-center">
+                <div class="d-inline-block">
+                    <h3 class="fw-bolder new-color">
+                        Thư viện ảnh
+                    </h3>
+                    <hr class="w-100 new-color opacity-100" style="border-top: 3px solid;">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-12 col-lg-8 mb-3 mb-lg-auto">
+                    <div>
+                        <img src="https://mcivietnam.com/media/home/blog/tv-anh-vuong-1.png"
+                            class="d-block w-100 rounded" alt="...">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div>
+                        <img src="https://mcivietnam.com/media/home/blog/tv-anh-vuong-1.png"
+                            class="d-block w-100 rounded" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center my-3">
+                <div class="col-12 col-md-12 col-lg-4 mb-3 mb-lg-auto">
+                    <div>
+                        <img src="https://mcivietnam.com/media/home/blog/tv-anh-vuong-1.png"
+                            class="d-block w-100 rounded" alt="...">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-8">
+                    <div>
+                        <img src="https://mcivietnam.com/media/home/blog/tv-anh-dai-2.png" class="d-block w-100 rounded"
+                            alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-6 mb-6">
+            <div class="justify-content-center mb-3 mb-lg-5">
+                <div class="d-inline-block">
+                    <h3 class="fw-bolder new-color">
+                        Chương trình đào tạo của MCI
+                    </h3>
+                    <hr class="w-100 new-color opacity-100" style="border-top: 3px solid;">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-6 col-lg-3 mb-3 mb-lg-auto">
+                    <div>
+                        <img src="https://mcivietnam.com/media/home/blog/data%20science.png"
+                            class="d-block w-100 h-100 rounded-circle" alt="...">
+                    </div>
+                    <div class="justify-content-center text-center mt-3">
+                        <h3 class="new-color fw-bolder">Phân tích dữ liệu</h3>
+                        <p class="text-justify mb-0">
+                            Phân tích dữ liệu (Data Analytics), là sự lựa chọn cho những ai đam mê thu thập,
+                            khai thác và xử lý các bộ dữ liệu để đưa ra quan sát. Phân tích dữ liệu giúp tìm ra
+                            các xu hướng và số liệu trong các khối thông tin mà có thể bị bỏ sót nếu không sử dụng
+                            kĩ thuật hay công cụ phân tích. Giúp tối ưu hóa các quy trình làm tăng hiệu quả tổng thể
+                            của một doanh nghiệp, hệ thống.
+                        </p>
+                        <a href="/course-market/" target="_blank" class="new-color font-italic float-end fw-bolder">
+                            Xem thêm
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-3 mb-3 mb-lg-auto">
+                    <div>
+                        <img src="https://mcivietnam.com/media/home/blog/data%20science.png"
+                            class="d-block w-100 h-100 rounded-circle" alt="...">
+                    </div>
+                    <div class="justify-content-center text-center mt-3">
+                        <h3 class="new-color fw-bolder">Khoa học dữ liệu</h3>
+                        <p class="text-justify mb-0">
+                            Khoa học dữ liệu (Data Science) là lĩnh vực nghiên cứu kết hợp chuyên môn lập trình và kiến
+                            thức
+                            toán học, thống kê để xử lý khối lượng dữ liệu. Áp dụng các thuật toán học máy cho các con
+                            số,
+                            văn bản, hình ảnh, video, âm thanh, sau đó xây dựng các hệ thống trí tuệ nhân tạo (AI) để
+                            phân
+                            tích dữ liệu từ nhiều nguồn khác nhau để đưa quyết định, lập kế hoạch chiến lược cho doanh
+                            nghiệp.
+                        </p>
+                        <a href="/course-market/" target="_blank" class="new-color font-italic float-end fw-bolder">
+                            Xem thêm
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-3 mb-3 mb-lg-auto">
+                    <div>
+                        <img src="https://mcivietnam.com/media/home/blog/software%20development.png"
+                            class="d-block w-100 h-100 rounded-circle" alt="...">
+                    </div>
+                    <div class="justify-content-center text-center mt-3">
+                        <h3 class="new-color fw-bolder">Kỹ sư dữ liệu</h3>
+                        <p class="text-justify mb-0">
+                            Kỹ sư dữ liệu (Data Engineer), là một trong những vị trí quan trọng trong lĩnh vực khoa học
+                            dữ
+                            liệu, người nắm vị trí then chốt xây dựng, kiểm tra, duy trì các cấu trúc Data tổng hợp. Tất
+                            cả
+                            các số liệu sẽ được số hóa, giúp tiết kiệm thời gian và giảm thiểu chi phí cho doanh nghiệp.
+                            Họ
+                            là những người thiết kế và tối ưu các hệ thống dữ liệu lớn để mang lại những lợi thế
+                            cạnh trạnh vượt trội.
+                        </p>
+                        <a href="/course-market/" target="_blank" class="new-color font-italic float-end fw-bolder">
+                            Xem thêm
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-3 mb-3 mb-lg-auto">
+                    <div>
+                        <img src="https://mcivietnam.com/media/home/blog/software%20development.png"
+                            class="d-block w-100 h-100 rounded-circle" alt="...">
+                    </div>
+                    <div class="justify-content-center text-center mt-3">
+                        <h3 class="new-color fw-bolder">Lập trình ứng dụng</h3>
+                        <p class="text-justify mb-0">
+                            Lập trình ứng dụng, top ngành được săn đón nhất hiện nay. Sử dụng các ngôn ngữ lập trình để
+                            tạo
+                            ra các ứng dụng có thể hoạt động được trên nền tảng, hoặc thiết bị như: ứng dụng web, ứng
+                            dụng
+                            di động,..Thế giới sẽ thiếu đi sự tương tác và dễ dàng nếu thiếu đi những kỹ sư phần mềm làm
+                            việc
+                            không biết mệt mỏi. Đây là ngành nghề trong mọi ngành nghề của thế kỉ 21 và hơn thế nữa.
+                        </p>
+                        <a href="/course-market/" target="_blank" class="new-color font-italic float-end fw-bolder">
+                            Xem thêm
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <div>
+        <div class="footer-above">
+            <div class="row ml-0 mr-0">
+                <div class="d-flex flex-wrap flex-lg-row justify-content-lg-center panel-below px-4">
+                    <div class="col-sm item-yellow justify-content-center">
+                        <h3><strong> HỌC VIỆN CÔNG NGHỆ MCI </strong></h3>
+                        <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/MagicCodeInstitute/"
+                            data-tabs="" data-width="" data-height="" data-small-header="false"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"
+                            fb-xfbml-state="rendered"
+                            fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=406295001429802&amp;container_width=468&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FMagicCodeInstitute%2F&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=&amp;width=">
+                            <span style="vertical-align: bottom; width: 340px; height: 130px;"><iframe
+                                    name="fb12001eef53f4" width="1000px" height="1000px"
+                                    data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin"
+                                    frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                    allow="encrypted-media"
+                                    src="https://www.facebook.com/v13.0/plugins/page.php?adapt_container_width=true&amp;app_id=406295001429802&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df147389e8c6ad94%26domain%3Dmcivietnam.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fmcivietnam.com%252Ff3566924217c6dc%26relation%3Dparent.parent&amp;container_width=468&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FMagicCodeInstitute%2F&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=&amp;width="
+                                    style="border: none; visibility: visible; width: 340px; height: 130px;"
+                                    class=""></iframe></span>
+                        </div>
+                    </div>
+
+                    <div class="col-sm item-yellow">
+                        <h3 style="color: var(--third-color)">HÀ NỘI</h3>
+                        <a href="tel:0982521378">
+                            <p class="footer-text">165 Thái Hà</p>
+                        </a>
+                        <a href="tel:0916442368">
+                            <p class="footer-text">Hotline: 0916 442 368</p>
+                        </a>
+                        <a href="tel:02471068368">
+                            <p class="footer-text">Địa chỉ: Tầng 6, số 5, </p>
+                        </a>
+                        <a href="tel:0352433233">
+                            <p class="footer-text">
+                                Tư vấn khóa học 1 - Ms. Khánh Ly 0352 433 233
+                            </p>
+                        </a>
+                        <a href="tel:0982654510">
+                            <p class="footer-text">
+                                Tư vấn khóa học 2 - Mr. Công Sơn 0382 255 286
+                            </p>
+                        </a>
+                        <a href="mailto:cskh@mcivietnam.com">
+                            <p class="footer-text">CSKH: cskh@mcivietnam.com</p>
+                        </a>
+                        <a href="/privacy-policy/">
+                            <p class="footer-text">Chính sách bảo mật</p>
+                        </a>
+
+                    </div>
+                    <div class="col-sm item-yellow">
+                        <h3 style="color: var(--third-color)">Hotline</h3>
+                        <a href="tel:0982521378">
+                            <p class="footer-text">Khiếu nại CEO: 0982 521 378</p>
+                        </a>
+                        <a href="tel:0916442368">
+                            <p class="footer-text">Khiếu nại DCEO: 0916 442 368</p>
+                        </a>
+                        <a href="tel:02471068368">
+                            <p class="footer-text">Khiếu nại dịch vụ CSKH: 024 7106 8368</p>
+                        </a>
+                        <a href="tel:0352433233">
+                            <p class="footer-text">
+                                Tư vấn khóa học 1 - Ms. Khánh Ly 0352 433 233
+                            </p>
+                        </a>
+                        <a href="tel:0982654510">
+                            <p class="footer-text">
+                                Tư vấn khóa học 2 - Mr. Công Sơn 0382 255 286
+                            </p>
+                        </a>
+                        <a href="mailto:cskh@mcivietnam.com">
+                            <p class="footer-text">CSKH: cskh@mcivietnam.com</p>
+                        </a>
+                        <a href="/privacy-policy/">
+                            <p class="footer-text">Chính sách bảo mật</p>
+                        </a>
+
+                    </div>
+                    <div class="col-sm item-yellow">
+                        <h3 style="color: var(--third-color)">Hồ Chí Minh</h3>
+                        <a href="tel:0982521378">
+                            <p class="footer-text">Khiếu nại CEO: 0982 521 378</p>
+                        </a>
+                        <a href="tel:0916442368">
+                            <p class="footer-text">Khiếu nại DCEO: 0916 442 368</p>
+                        </a>
+                        <a href="tel:02471068368">
+                            <p class="footer-text">Khiếu nại dịch vụ CSKH: 024 7106 8368</p>
+                        </a>
+                        <a href="tel:0352433233">
+                            <p class="footer-text">
+                                Tư vấn khóa học 1 - Ms. Khánh Ly 0352 433 233
+                            </p>
+                        </a>
+                        <a href="tel:0982654510">
+                            <p class="footer-text">
+                                Tư vấn khóa học 2 - Mr. Công Sơn 0382 255 286
+                            </p>
+                        </a>
+                        <a href="mailto:cskh@mcivietnam.com">
+                            <p class="footer-text">CSKH: cskh@mcivietnam.com</p>
+                        </a>
+                        <a href="/privacy-policy/">
+                            <p class="footer-text">Chính sách bảo mật</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.category-item:last-child').addClass('border-right-0');
+        });
+    </script>
+
+    <script>
+        let blogSection = $('#blog-section');
+
+        if (window.innerWidth <= 576) {
+
+            blogSection.addClass('order-first');
+        } else {
+
+            blogSection.removeClass('order-first');
+        }
+    </script>
+
+
+
+    <!--Javascript-->
+    <script src="/static/home/js/home.js"></script>
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "891347331198328");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+
+</body>
+
+</html>
